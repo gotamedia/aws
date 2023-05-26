@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.7](https://bitbucket.org/gotamedia/aws/compare/0.0.7..0.0.6) (2023-05-26)
+
+
+### Bug Fixes
+
+* configure & silenceXrayContextErrors exports. ([72b52ef](https://bitbucket.org/gotamedia/aws/commits/72b52efd2d694d49656d85fd0db86d7c5daac789))
+
 ## [0.0.6](https://bitbucket.org/gotamedia/aws/compare/0.0.6..0.0.5) (2023-05-26)
 
 
