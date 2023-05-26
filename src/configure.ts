@@ -19,5 +19,5 @@ const configure = (config: AWS_SERVICES_CONFIG_Type) => {
 
 export {
     AWS_SERVICES_CONFIG,
-    configure as default
+    configure
 }
