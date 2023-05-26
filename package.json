@@ -3,8 +3,8 @@
     "version": "0.0.3",
     "private": false,
     "description": "Set of AWS helpers for NodeJs Runtime.",
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
+    "main": "index.js",
+    "types": "index.d.ts",
     "keywords": [
         "Gota",
         "Gota Media",
@@ -23,6 +23,17 @@
     },
     "homepage": "https://bitbucket.org/gotamedia/aws#readme",
     "devDependencies": {
+        "@aws-sdk/client-lambda": "3.188.0",
+        "@aws-sdk/client-s3": "3.188.0",
+        "@aws-sdk/client-sns": "3.188.0",
+        "@aws-sdk/client-sqs": "3.188.0",
+        "@aws-sdk/client-ssm": "3.188.0",
+        "@aws-sdk/types": "3.188.0",
+        "@types/node": "^20.2.4",
+        "aws-xray-sdk-core": "^3.5.0",
         "typescript": "^5.0.4"
+    },
+    "dependencies": {
+        "@gotamedia/utils": "^0.0.1"
     }
 }

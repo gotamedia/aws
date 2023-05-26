@@ -6,6 +6,9 @@
         "outDir": "./lib",
         "strict": true
     },
+    "types": [
+        "node"
+    ],
     "include": [
         "src"
     ],

@@ -1,7 +1,3 @@
-const logger = (name: string) => {
-    console.log(name)
-}
-
-export {
-    logger
-}
+export * from "./services"
+export * from "./utils"
+export * from "./configure"
