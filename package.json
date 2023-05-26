@@ -1,6 +1,6 @@
 {
     "name": "@gotamedia/aws",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "private": false,
     "description": "Set of AWS helpers for NodeJs Runtime.",
     "main": "index.js",

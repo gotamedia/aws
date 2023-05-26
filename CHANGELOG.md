@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.8](https://bitbucket.org/gotamedia/aws/compare/0.0.8..0.0.7) (2023-05-26)
+
+
+### Bug Fixes
+
+* Bumped @gotamedia/utils version. ([ff9d0e6](https://bitbucket.org/gotamedia/aws/commits/ff9d0e6f971f77890376b6efb0fb5e83d7319554))
+
 ## [0.0.7](https://bitbucket.org/gotamedia/aws/compare/0.0.7..0.0.6) (2023-05-26)
 
 
