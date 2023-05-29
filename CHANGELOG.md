@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.1](https://bitbucket.org/gotamedia/aws/compare/0.1.1..0.1.0) (2023-05-29)
+
+
+### Bug Fixes
+
+* **doc:** Updated README. ([d221a44](https://bitbucket.org/gotamedia/aws/commits/d221a44fce6cf1f7005779000b625fe7d3f54227))
+
 ## [0.1.0](https://bitbucket.org/gotamedia/aws/compare/0.1.0..0.0.8) (2023-05-29)
 
 
