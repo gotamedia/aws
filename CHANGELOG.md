@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.0](https://bitbucket.org/gotamedia/aws/compare/0.1.0..0.0.8) (2023-05-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* Introduced @gotamedia/aws package.
+
+### Features
+
+* Added getObject() to S3 service. ([be8f2e9](https://bitbucket.org/gotamedia/aws/commits/be8f2e9d3427b8dee00b33bd3af19faf32615131))
+* Introduced @gotamedia/aws package. ([707c059](https://bitbucket.org/gotamedia/aws/commits/707c0598d11d55e7a9c843537a407f22ca03811b))
+
 ## [0.0.8](https://bitbucket.org/gotamedia/aws/compare/0.0.8..0.0.7) (2023-05-26)
 
 
