@@ -318,3 +318,32 @@ const handler = async () => {
     ...
 }
 ```
+
+## Contributing
+
+### Trunk based development
+This project uses a [trunk based development](https://cloud.google.com/architecture/devops/devops-tech-trunk-based-development) workflow.
+
+> **_NOTE:_**  `master` is the trunk branch
+
+### Conventional commits
+
+This project works with [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
+
+### Contribute
+* Pull latest from develop.
+* Branch out a new branch.
+* Commit and push your awesome code.
+* Open a pull request so we can approve your awesome code.
+
+## Publish
+Any time you push to origin master branch, a pipeline will be automatically triggered and it will build the package for you.
+The pipeline will bump the version for you automatically and tag the package.
+
+> **_NOTE:_**  NO MANUAL TAGGING
+
+Then it will generate and update the CHANGELOG depends on your pushed commits.
+
+## License
+
+MIT
