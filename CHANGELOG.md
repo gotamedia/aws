@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.2](https://bitbucket.org/gotamedia/aws/compare/0.1.2..0.1.1) (2023-05-31)
+
+
+### Bug Fixes
+
+* Added "aws-xray-sdk-core" as a dependency instead of a devDependency. ([479b4f9](https://bitbucket.org/gotamedia/aws/commits/479b4f9a8ede2c49b0e362d2cf6cb182d5f70943))
+
 ## [0.1.1](https://bitbucket.org/gotamedia/aws/compare/0.1.1..0.1.0) (2023-05-29)
 
 
