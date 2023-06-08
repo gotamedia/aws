@@ -4,8 +4,7 @@ import {
     PutParameterCommand
 } from "@aws-sdk/client-ssm"
 
-import debug from "../debug"
-import handleError from "../handleError"
+import { SSMError } from "../errors"
 import { wrapClient } from "./Xray"
 
 import type {
@@ -21,8 +20,6 @@ const getParameter = async (params: GetParameterCommandInput) => {
         ...filteredParams
     } = params
 
-    debug("Get SSM patameter with name: ", Name)
-
     try {
         const getParameterCommand = new GetParameterCommand({
             Name: Name,
@@ -32,18 +29,14 @@ const getParameter = async (params: GetParameterCommandInput) => {
         const { Parameter } = await SSM.send(getParameterCommand)
 
         if (!Parameter?.Value) {
-            debug("Got invalid SSM patameter: ", Parameter)
-
-            handleError(new Error("Failed to retrieve parameters from SSM, got empty value"))
-
-            return null
+            throw new SSMError("Failed to retrieve parameters from SSM, got empty value")
         }
-        
+
         return Parameter.Value
     } catch (error) {
-        handleError(error as Error, "Something went wrong while retrieving parameters from SSM")
-
-        return null
+        throw new SSMError("Something went wrong while retrieving parameters from SSM", {
+            cause: error as Error
+        })
     }
 }
 
@@ -56,8 +49,6 @@ const putParameter = async (params: PutParameterCommandInput) => {
         ...filteredParams
     } = params
 
-    debug("Put SSM patameter with name: ", Name, ", value: ", Value, ", type: ", Type)
-
     try {
         const putParameterCommand = new PutParameterCommand({
             Name: Name,
@@ -69,7 +60,9 @@ const putParameter = async (params: PutParameterCommandInput) => {
 
         await SSM.send(putParameterCommand)
     } catch (error) {
-        handleError(error as Error, "Something went wrong while storing parameter value in SSM")
+        throw new SSMError("Something went wrong while storing parameter value in SSM", {
+            cause: error as Error
+        })
     }
 }
 

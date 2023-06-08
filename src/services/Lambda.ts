@@ -3,8 +3,7 @@ import {
     InvokeCommand
 } from "@aws-sdk/client-lambda"
 
-import debug from "../debug"
-import handleError from "../handleError"
+import { LambdaError } from "../errors"
 import { wrapClient } from "./Xray"
 
 import type { InvokeCommandInput } from "@aws-sdk/client-lambda"
@@ -19,8 +18,6 @@ const invoke = async (params: InvokeCommandInput) => {
         ...filteredParams
     } = params
 
-    debug("Invoke Lambda with function name: ", FunctionName, ", type: ", InvocationType, ", payload: ", Payload)
-
     try {
         const invokeCommand = new InvokeCommand({
             FunctionName: FunctionName,
@@ -33,7 +30,9 @@ const invoke = async (params: InvokeCommandInput) => {
 
         return response
     } catch (error) {
-        handleError(error as Error, "Something went wrong while invoking Lambda function")
+        throw new LambdaError("Something went wrong while invoking Lambda function", {
+            cause: error as Error
+        })
     }
 }
 
