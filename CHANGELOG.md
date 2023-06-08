@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.0](https://bitbucket.org/gotamedia/aws/compare/0.2.0..0.1.2) (2023-06-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* Removed configure
+* Removed custom error handling and logging and added package specific errors
+
+### Features
+
+* Removed custom error handling and logging and added package specific errors ([95722bb](https://bitbucket.org/gotamedia/aws/commits/95722bb00958e6f87c4e9bf78e0807c95d579888))
+
+
+### Bug Fixes
+
+* Removed configure ([55fd8f1](https://bitbucket.org/gotamedia/aws/commits/55fd8f1c1797f143f30a40d1c08396520f61cf54))
+
 ## [0.1.2](https://bitbucket.org/gotamedia/aws/compare/0.1.2..0.1.1) (2023-05-31)
 
 
