@@ -15,30 +15,6 @@ const handler = () => {
 }
 ```
 
-## Configure
-In your lambda, import configure() from `@gotamedia/aws/configure` and make sure to call it bafore your handler
-
-**Example:**
-```ts
-import configure from "@gotamedia/aws/configure"
-
-configure({
-    outputErrors: true,
-    throwErrors: true
-})
-
-const handler = async () => {
-    ...
-}
-```
-
-##### configure()
-| property     | type    | default | required | description                                                                                    |
-|--------------|---------|---------|----------|------------------------------------------------------------------------------------------------|
-| debug        | boolean | false   |          | A debug flag, if set to true AWS Layer will start outputting helpful logs for all it's methods |
-| throwErrors  | boolean | false   |          | Throw all caught errors from AWS SDK                                                           |
-| outputErrors | boolean | true    |          | Output all caught errors from AWS SDK                                                          |
-
 ## Services
 Available services:
 * Lambda
@@ -308,7 +284,7 @@ const handler = async () => {
 #### Available utils:
 
 ##### silenceXrayContextErrors
-A helper util to silence Xray "Missing AWS Lambda trace data for Xray @Object.contextMissingLogError" 
+A helper util to silence Xray "Missing AWS Lambda trace data for Xray @Object.contextMissingLogError"
 
 **Example:**
 ```ts

@@ -5,8 +5,7 @@ import {
     DeleteObjectCommand
 } from "@aws-sdk/client-s3"
 
-import debug from "../debug"
-import handleError from "../handleError"
+import { S3Error } from "../errors"
 import { wrapClient } from "./Xray"
 
 import type {
@@ -24,8 +23,6 @@ const getObject = async (params: GetObjectCommandInput) => {
         ...filteredParams
     } = params
 
-    debug("Get S3 object, BUCKET: ", Bucket, ", KEY: ", Key)
-
     try {
         const getObjectCommand = new GetObjectCommand({
             Bucket: Bucket,
@@ -37,7 +34,9 @@ const getObject = async (params: GetObjectCommandInput) => {
 
         return response
     } catch (error) {
-        handleError(error as Error, "Something went wrong while getting S3 object")
+        throw new S3Error("Something went wrong while getting S3 object", {
+            cause: error as Error
+        })
     }
 }
 
@@ -50,8 +49,6 @@ const putObject = async (params: PutObjectCommandInput) => {
         ...filteredParams
     } = params
 
-    debug("Put S3 object, BUCKET: ", Bucket, ", KEY: ", Key, ", BODY: ", Body)
-
     try {
         const putObjectCommand = new PutObjectCommand({
             Bucket: Bucket,
@@ -63,7 +60,9 @@ const putObject = async (params: PutObjectCommandInput) => {
 
         await S3.send(putObjectCommand)
     } catch (error) {
-        handleError(error as Error, "Something went wrong while putting S3 object")
+        throw new S3Error("Something went wrong while putting S3 object", {
+            cause: error as Error
+        })
     }
 }
 
@@ -74,8 +73,6 @@ const deleteObject = async (params: DeleteObjectCommandInput) => {
         ...filteredParams
     } = params
 
-    debug("Delete S3 object, BUCKET: ", Bucket, ", KEY: ", Key)
-
     try {
         const deleteObjectCommand = new DeleteObjectCommand({
             Bucket: Bucket,
@@ -85,7 +82,9 @@ const deleteObject = async (params: DeleteObjectCommandInput) => {
 
         await S3.send(deleteObjectCommand)
     } catch (error) {
-        handleError(error as Error, "Something went wrong while deleteing S3 object")
+        throw new S3Error("Something went wrong while deleteing S3 object", {
+            cause: error as Error
+        })
     }
 }
 
