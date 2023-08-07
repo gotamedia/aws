@@ -15,12 +15,12 @@ jobs:
       with:
         token: "${{ secrets.MANUAL_WORKFLOW_TOKEN }}"
         release-type: node
-        package-name: oc
+        package-name: aws
         include-v-in-tag: false
 
     - name: automerge PR
       uses: gopac25/automerge@master
       with:
         github_token: ${{ secrets.MANUAL_WORKFLOW_TOKEN }}
-        source: 'release-please--branches--master--components--oc'
+        source: 'release-please--branches--master--components--aws'
         target: 'master'
