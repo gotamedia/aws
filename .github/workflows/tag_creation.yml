@@ -16,6 +16,7 @@ jobs:
         token: "${{ secrets.MANUAL_WORKFLOW_TOKEN }}"
         release-type: node
         package-name: oc
+        include-v-in-tag: false
 
     - name: automerge PR
       uses: gopac25/automerge@master
