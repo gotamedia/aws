@@ -1,5 +1,3 @@
 {
-    "releaseCommitMessageFormat": "chore(release): {{currentTag}} [skip ci]",
-    "compareUrlFormat":"{{host}}/{{owner}}/{{repository}}/compare/{{currentTag}}..{{previousTag}}",
-    "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commits/{{hash}}"
+    "releaseCommitMessageFormat": "chore(release): {{currentTag}}"
 }
