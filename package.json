@@ -1,6 +1,6 @@
 {
     "name": "@gotamedia/aws",
-    "version": "0.1.1",
+    "version": "0.2.2",
     "private": false,
     "description": "Set of AWS helpers for NodeJs Runtime.",
     "main": "index.js",
@@ -19,9 +19,9 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://bitbucket.org/gotamedia/aws.git"
+        "url": "https://github.com/gotamedia/aws.git"
     },
-    "homepage": "https://bitbucket.org/gotamedia/aws#readme",
+    "homepage": "https://github.com/gotamedia/aws#readme",
     "devDependencies": {
         "@aws-sdk/client-lambda": "3.188.0",
         "@aws-sdk/client-s3": "3.188.0",

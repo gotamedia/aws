@@ -2,6 +2,45 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.2](https://github.com/gotamedia/aws/compare/0.2.1...0.2.2) (2023-08-07)
+
+
+### Bug Fixes
+
+* package name ([1bc3083](https://github.com/gotamedia/aws/commit/1bc30834162354a7095c0bcb3db49b8ccacae1f8))
+* versioning ([b140194](https://github.com/gotamedia/aws/commit/b140194e3e6cb17b667ef02f0bb5585d68f19733))
+
+## [0.2.1](https://github.com/gotamedia/aws/compare/0.2.0...0.2.1) (2023-08-07)
+
+
+### Bug Fixes
+
+* GH Actions ([8725f50](https://github.com/gotamedia/aws/commit/8725f50c5d7e8aba7212a94defc485be6a89fbfd))
+
+## [0.2.0](https://bitbucket.org/gotamedia/aws/compare/0.2.0..0.1.2) (2023-06-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* Removed configure
+* Removed custom error handling and logging and added package specific errors
+
+### Features
+
+* Removed custom error handling and logging and added package specific errors ([95722bb](https://bitbucket.org/gotamedia/aws/commits/95722bb00958e6f87c4e9bf78e0807c95d579888))
+
+
+### Bug Fixes
+
+* Removed configure ([55fd8f1](https://bitbucket.org/gotamedia/aws/commits/55fd8f1c1797f143f30a40d1c08396520f61cf54))
+
+## [0.1.2](https://bitbucket.org/gotamedia/aws/compare/0.1.2..0.1.1) (2023-05-31)
+
+
+### Bug Fixes
+
+* Added "aws-xray-sdk-core" as a dependency instead of a devDependency. ([479b4f9](https://bitbucket.org/gotamedia/aws/commits/479b4f9a8ede2c49b0e362d2cf6cb182d5f70943))
+
 ## [0.1.1](https://bitbucket.org/gotamedia/aws/compare/0.1.1..0.1.0) (2023-05-29)
 
 
