@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.2](https://github.com/gotamedia/aws/compare/0.2.1...0.2.2) (2023-08-07)
+
+
+### Bug Fixes
+
+* package name ([1bc3083](https://github.com/gotamedia/aws/commit/1bc30834162354a7095c0bcb3db49b8ccacae1f8))
+* versioning ([b140194](https://github.com/gotamedia/aws/commit/b140194e3e6cb17b667ef02f0bb5585d68f19733))
+
 ## [0.2.1](https://github.com/gotamedia/aws/compare/0.2.0...0.2.1) (2023-08-07)
 
 
